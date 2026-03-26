@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Support</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #fff;
+            color: #000;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 30px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .call-btn {
+            background: #0071e3;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .search {
+            padding: 12px;
+            width: 300px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: 0.3s;
+            width: 150px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Floating button */
+        .floating {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0071e3;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div><b>Support</b></div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Support</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </div>
+        <a class="call-btn" href="tel:+18652558624">Call Now</a>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>How can we help you today?</h1>
+        <p>24/7 expert support available</p>
+        <input class="search" placeholder="Search support..." />
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+        <div class="card">iPhone</div>
+        <div class="card">Mac</div>
+        <div class="card">iPad</div>
+        <div class="card">Billing</div>
+        <div class="card">Repairs</div>
+    </div>
+
+    <!-- Floating Call -->
+    <a class="floating" href="tel:+18652558624">📞</a>
+
+</body>
+
+</html>
